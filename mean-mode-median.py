@@ -10,8 +10,8 @@
 
 from scipy import stats
 
-speed = [99,86,87,88,111,86,103,87,94,54,78,74,37,85,86]
+sped = [99,86,87,88,111,86,103,87,94,54,78,74,37,85,86]
 
-x = stats.mode(speed)
+x = stats.mode(sped)
 
 print(x)
