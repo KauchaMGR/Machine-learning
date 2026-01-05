@@ -1,8 +1,8 @@
 import numpy
 
-speed = [86,87,88,86,87,83,56]
+seed = [86,87,88,86,87,83,56]
 
-x = numpy.std(speed)
+x = numpy.std(seed)
 
 print("standard deviation is",x)
 
