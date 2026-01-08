@@ -51,9 +51,15 @@ x = [1,2,3,5,6,7,8,9,10,12,13,14,15,16,18,19,21,22]
 y = [100,90,80,60,60,55,60,65,70,70,75,76,78,79,90,99,99,100]
 
 
-mymodel=np.poly1d(np.polyfit(x,y,3))
-myline=np.linspace(1,22,100)
+# mymodel=np.poly1d(np.polyfit(x,y,3))
+# myline=np.linspace(1,22,100)
 
-plt.scatter(x,y)
-plt.plot(myline,mymodel(myline))
-plt.show()
+# plt.scatter(x,y)
+# plt.plot(myline,mymodel(myline))
+# plt.show()
+
+#R-Squared  is used to find relationship between the lines such that we can verify if it is useful for predecting future vslues or not
+
+from sklearn.metrics import r2_score
+mymodel=np.poly1d(np.polyfit(x,y,3))
+print(x,r2_score(y))
