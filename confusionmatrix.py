@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 
 actual=np.random.binomial(1,0.9,1000)
 predicted=np.random.binomial(1,0.9,1000)
+confusion_matrix=metrics.confusion_matrix(actual,predicted)
+cm_display=metrics.ConfusionMatrixDisplay(confusion_matrix=confusion_matrix,display_labels=[0,1])
 
-plt.plot(actual,predicted)
-plt.scatter(actual,predicted)
+cm_display.plot()
+
 plt.show()
