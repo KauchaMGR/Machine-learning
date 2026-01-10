@@ -6,4 +6,5 @@ actual=np.random.binomial(1,0.9,1000)
 predicted=np.random.binomial(1,0.9,1000)
 
 plt.plot(actual,predicted)
+plt.scatter(actual,predicted)
 plt.show()
